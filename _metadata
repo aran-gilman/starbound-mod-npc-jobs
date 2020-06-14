@@ -1,0 +1,7 @@
+{
+	"author" : "zoniventris",
+	"description" : "Adds new tenants and expands existing ones that perform jobs in your colony, such as farming, cooking, anc crafting.",
+	"friendlyName" : "NPC Jobs",
+	"name" : "NpcJobs",
+	"version" : "0.1.0-alpha"
+}
