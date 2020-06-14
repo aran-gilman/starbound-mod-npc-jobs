@@ -1,0 +1,25 @@
+{
+	"name": "farmer_avian",
+	"priority": 5,
+	
+	"colonyTagCriteria": {
+		"light": 1,
+		"door": 1,
+		"avianvillage": 8,
+		"storage": 8
+	},
+	
+	"tenants": [
+		{
+			"spawn": "npc",
+			"species": "avian",
+			"type": "farmertenant",
+			"overrides": {}
+		}
+	],
+	
+	"rent": {
+		"periodRange": [900.0, 1800.0],
+		"pool": "merchantGift"
+	}
+}
