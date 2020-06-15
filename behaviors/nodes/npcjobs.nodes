@@ -1,0 +1,25 @@
+{
+	"findHarvestable": {
+		"type": "action",
+		"name": "findHarvestable",
+		"title": "",
+		"properties": {
+			"centerPosition": {
+				"type": "position",
+				"key": "self"
+			},
+			"range": {
+				"type": "number",
+				"value": null
+			}
+		},
+		"category": "npcjobs",
+		"script": "/scripts/actions/npcjobs.lua",
+		"output": {
+			"harvestablePosition": {
+				"type": "position",
+				"key": null
+			}
+		}
+	}
+}
