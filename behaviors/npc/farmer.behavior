@@ -1,0 +1,66 @@
+{
+	"name": "farmer",
+	"description": "Tries to plant seeds and harvest nearby crops",
+	"scripts": [],
+	"parameters": {},
+	"root": {
+		"title": "dynamic",
+		"type": "composite",
+		"name": "dynamic",
+		"parameters": {},
+		"children": [
+			{
+				"title": "Try find harvestable",
+				"type": "composite",
+				"name": "sequence",
+				"parameters": {},
+				"children": [
+					{
+						"title": "Find harvestable",
+						"type": "action",
+						"name": "findHarvestable",
+						"parameters": {
+							"range": {
+								"value": 100
+							}
+						},
+						"output": {
+							"position": "harvestPosition"
+						}
+					},
+					{
+						"title": "Move to harvestable",
+						"type": "action",
+						"name": "moveToPosition",
+						"parameters": {
+							"avoidLiquid": {
+								"value": true
+							},
+							"groundPosition": {
+								"value": true
+							},
+							"maxGround": {
+								"value": 5
+							},
+							"minGround": {
+								"value": -20
+							},
+							"pathOptions": {
+								"value": {}
+							},
+							"position": {
+								"key": "harvestPosition"
+							},
+							"run": {
+								"value": false
+							}
+						},
+						"output": {
+							"pathfinding": "isPathfinding"
+						}
+					}
+				]
+			}
+		]
+	}
+}

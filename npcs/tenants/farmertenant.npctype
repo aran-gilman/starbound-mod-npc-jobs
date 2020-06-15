@@ -1,0 +1,14 @@
+{
+	"type": "farmertenant",
+	"baseType": "villager",
+	"dropPools": [],
+	"scriptConfig": {
+		"behavior": "farmer",
+		"questGenerator": {
+			"pools": [
+				"common",
+				"tenant"
+			]
+		}
+	}
+}

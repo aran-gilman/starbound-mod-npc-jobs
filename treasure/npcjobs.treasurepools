@@ -1,0 +1,29 @@
+{
+	"farmerGift": [
+		[
+			1,
+			{
+				"pool": [
+					{
+						"weight": 0.2,
+						"pool": "tenantMoney"
+					},
+					{
+						"weight": 0.2,
+						"pool": "healingItem"
+					},
+					{
+						"weight": 0.2,
+						"pool": "seed"
+					},
+					{
+						"weight": 0.4,
+						"pool": "produce"
+					}
+				],
+				"poolRounds": 1,
+				"allowDuplication": false
+			}
+		]
+	]
+}
